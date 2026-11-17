@@ -1,0 +1,84 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- Thư viện hỗ trợ tiếng Việt và định dạng trang ---
+\usepackage[utf8]{vietnam}          % Hỗ trợ tiếng Việt
+\usepackage[margin=2.5cm]{geometry} % Căn lề 2.5cm đều 4 cạnh
+\usepackage{graphicx}               % Chèn hình ảnh
+\usepackage{amsmath, amssymb}       % Công thức toán học
+\usepackage{booktabs}               % Tạo bảng đẹp
+\usepackage{hyperref}               % Tạo link liên kết và mục lục tự động
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+% --- Thông tin báo cáo ---
+\title{\textbf{BÁO CÁO ĐỀ TÀI}\\ \Large Môn học / Dự án: Đề tài 5}
+\author{\textbf{Người thực hiện:} Nguyễn Văn A \\ \textbf{MSSV:} 12345678}
+\date{\today}
+
+% --- Bắt đầu nội dung tài liệu ---
+\begin{document}
+
+% 1. Tạo trang bìa
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% 2. Tạo mục lục tự động
+\tableofcontents
+\newpage
+
+% 3. Nội dung chính
+\section{Giới thiệu tổng quan}
+Đây là phần giới thiệu tổng quan về đề tài. Bạn có thể viết các đoạn văn mô tả bài toán, mục tiêu và phạm vi nghiên cứu tại đây.
+
+\section{Cơ sở lý thuyết và Phương pháp}
+\subsection{Cơ sở lý thuyết}
+LaTeX hỗ trợ viết công thức toán học rất chuyên nghiệp. Ví dụ công thức nằm cùng dòng $E = mc^2$ hoặc công thức hiển thị riêng:
+
+\begin{equation}
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+\end{equation}
+
+\subsection{Phương pháp thực hiện}
+Dưới đây là danh sách các bước thực hiện:
+\begin{itemize}
+    \item \textbf{Bước 1:} Thu thập dữ liệu.
+    \item \textbf{Bước 2:} Xử lý và làm sạch dữ liệu.
+    \item \textbf{Bước 3:} Huấn luyện mô hình và đánh giá kết quả.
+\end{itemize}
+
+\section{Kết quả thực nghiệm}
+\subsection{Bảng biểu}
+Dưới đây là bảng tổng hợp kết quả đánh giá:
+
+\begin{table}[htbp]
+    \centering
+    \caption{Bảng so sánh kết quả thực nghiệm}
+    \label{tab:ketqua}
+    \begin{tabular}{|c|l|c|}
+        \hline
+        \textbf{STT} & \textbf{Tên chỉ số} & \textbf{Giá trị} \\ \hline
+        1 & Accuracy (Độ chính xác) & 95.5\% \\ \hline
+        2 & Processing Time (Thời gian xử lý) & 1.25s \\ \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Hình ảnh}
+Để chèn hình ảnh vào báo cáo, bạn lưu ảnh vào cùng thư mục với file `.tex` và sử dụng cú pháp:
+
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.7\textwidth]{ten_anh.png}
+    \caption{Sơ đồ hệ thống}
+    \label{fig:sodo}
+\end{figure}
+
+\section{Kết luận và Phân tích}
+Tóm tắt các kết quả đã đạt được, những hạn chế còn tồn tại và hướng phát triển tiếp theo của đề tài.
+
+\end{document}

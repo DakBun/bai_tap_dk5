@@ -1,0 +1,18 @@
+{
+  "identified": {
+    "OpenAlex": 72,
+    "Crossref": 72
+  },
+  "identified_total": 144,
+  "duplicates_removed": 7,
+  "screened": 137,
+  "excluded": 101,
+  "excluded_by_reason": {
+    "Khong co tap chi/don vi phat hanh (chua xac nhan binh duyen)": 84,
+    "Khong lien quan den M1/M2/M3 (dien gia theo tieu de/tom tắt)": 17
+  },
+  "included": 36,
+  "matrix_rows": 36,
+  "bib_records": 36,
+  "ris_records": 36
+}
