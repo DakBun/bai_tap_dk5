@@ -1,4 +1,4 @@
-# Ngheiu dự án & Tổng quan
+# Nghiên cứu dự án & Tổng quan
 
 **Tên dự án:** Nghiên cứu tác động của độ ồn đến sức khỏe
 **Mô tả ngắn gọn:** Dự án này thực hiện nghiên cứu toàn diện về tác động của nhiễm tiếng ồn đến sức khỏe cộng đồng dựa trên dữ liệu tài liệu nghiên cứu khoa học, mô hình hóa phân tán và tính toán độ chính xác của các phương pháp đo lường và bản đồ hóa tiếng ồn. Mục tiêu là cung cấp cái nhìn tổng quan về các phương pháp đánh giá tiếng ồn, khả năng chính xác của cảm biến smartphone và các mô hình prediction (như CNOSSOS-EU) trong môi trường đường phố.
@@ -15,7 +15,7 @@ Chu trình nghiên cứu bao gồm:
 
 | Mô-đun | Mô tả | File chính |
 |--------|-------|-----------|
-| **Tự thucollect tài liệu** | Tìm kiếm tự động qua Crossref & OpenAlex với 6 nhóm truy vấn về tiếng ồn giao thong, calibration smartphone, bản đồ hóa | `de5_do_on/tai_lieu/scripts/search.py` |
+| **Tự thu collect tài liệu** | Tìm kiếm tự động qua Crossref & OpenAlex với 6 nhóm truy vấn về tiếng ồn giao thong, calibration smartphone, bản đồ hóa | `de5_do_on/tai_lieu/scripts/search.py` |
 | **Sang lọc bài viết** | Phân loại INCLUDE/EXCLUDE dựa trên từ khóa M1 (mô hình nguồn/lan truyền/VN), M2 (calibration smartphone, accuracy), M3 (noi suy, không đảm bảo) | `de5_do_on/tai_lieu/scripts/screen_export.py` |
 | **Xây dựng ma trận & tham chiếu** | Tạo matrix.csv, references.bib, references.ris từ các bài INCLUDE với trích xuất mục tiêu, phương pháp, mẫu số, kết quả, hạn chế | `de5_do_on/tai_lieu/scripts/build_outputs.py` |
 | **Xác minh DOI/título** | Kiểm tra tính hợp lệ DOI qua Crossref, phát hiện MISMATCH giữa tiêu đề cung cấp và API | `de5_do_on/tai_lieu/scripts/verify.py` |
