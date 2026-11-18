@@ -176,37 +176,7 @@ python pilot_ondo.py
 - Sử dụng giả định parameters (mọi giá trị đều là dummy/ASSUMPTION, không phải từ literature thực)
 - Dùng để kiểm tra logic IDW interpolation, RMSE calculation
 
-#### 6. Biên dịch báo cáo LaTeX (nếu có)
 
-```powershell
-cd E:\Đề tài 5\de5_do_on\bao_cao
-pdflatex ban_thu_hoach.tex
-# Hoặc với xelatex/lualatex nếu có ký tự Unicode phức tạp
-```
-│   │   ├── 📁 screening.csv      # Kết quả quyết định include/exclude + lý do + nhóm M1/M2/M3
-│   │   ├── 📁 matrix.csv         # Ma trận tóm tóm 36 bài include (mục đích, phương pháp, mẫu...)
-│   │   ├── 📁 references.bib     # File BibTeX 36 bài include
-│   │   ├── 📁 references.ris     # File RIS 36 bài include
-│   │   ├── 📁 prisma_counts.json # Thống kê PRISMA: identified, screened, excluded, included
-│   │   ├── 📁 seed_list.csv      # 13 bài gốc (seed papers) có DOI/cần xác minh
-│   │   ├── 📁 check_env.py       # Kiểm tra môi trường chạy script
-│   │   ├── 📁 matrix_core.csv    # Core matrix data
-│   │   ├── 📁 candidates.csv     # Dữ liệu candidates (cùng level với screening)
-│   │   ├── 📁 search_log.csv     # Lịch sử truy vấn API (ngày, nguồn, truy vấn, số kết quả)
-│   │   ├── 📁 type_cache.json    # Cache kiểu dữ liệu từ Crossref/RIS
-│   │   ├── 📁 candidates.csv     # Dữ liệu candidates đã thu thập
-│   │   ├── 📁 screening.csv      # Kết quả xét duyệt
-│   │   ├── 📁 matrix.csv         # Ma trận kết quả
-│   │   ├── 📁 prisma_counts.json # Thống kê luồng PRISMA
-│   │   ├── 📁 seed_list.csv      # 13 hat giong goc
-│   │   └── 📄 README.md          # Giới thiệu tai_lieu
-│   ├── 📁 de5_do_on/bao_cao/    # Báo cáo LaTeX
-│   │   └── 📄 ban_thu_hoach.tex  # Bản thể cấu trúc báo cáo
-│   └── 📄 log_AI.md              # Nhật ký hoạt động AI
-├── 📁 mo_phong/                  # Thư mục tham số thử nghiệm (placeholder/dummy)
-│   └── 📄 params.csv             # Các tham số dummy cho code testing only
-└── 📁 cd/                        # Thư mục hệ con
-```
 
 ---
 - **7** bản duplicate đã loại trước khi lưu candidates.csv
